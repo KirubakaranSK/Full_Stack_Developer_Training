@@ -1,0 +1,243 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    background: url(bg_darkblue.gif);
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size: 12px;
+}
+.page-wrapper{
+    background: url(bg_body.jpg)no-repeat ;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 990px;
+    height: 980px;
+}
+a{
+    font-weight: bold;
+    color: #FFFF99;
+    text-decoration: none;
+}
+
+header{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+#zen-summary p:nth-child(1)
+{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#zen-summary p:nth-child(2)
+{
+    position: absolute;
+    top: 140px;
+    left: 760px;
+    color: lightcyan;
+    width: 175px;
+
+    letter-spacing :1.5px;
+    text-align: end;
+}
+
+.preamble
+{
+    position: absolute;
+    top: 330px;
+    left: 712px;
+    width: 235px;
+    height: 400px;
+    padding-bottom: 65px;
+    background: url(bg_preamble.gif) no-repeat left bottom;
+    
+}
+
+
+.preamble h3{
+
+    background: url(bg_preambleh3.gif);
+    margin: 0;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 60px;
+
+}
+
+.preamble p{
+    padding: 0 20px 10px 20px;
+    text-align: justify;
+    line-height: 18px;
+    background:url(bg_lightblue.gif);
+    margin: 0;
+}
+.main-supporting{
+    position: absolute;
+    top:325px;
+    left:285px;
+    width: 400px;
+    padding-bottom: 90px;
+}
+
+
+.main-supporting p {
+    padding: 0 20px 10px 20px;
+    text-align: justify;
+    background: url(bg_lightblue.gif);
+    margin: 0;
+    line-height: 18px;
+
+
+}
+
+.explanation{
+
+    padding-bottom: 25px;
+    background: url(bg_explanation.gif) no-repeat left bottom;
+}
+
+.explanation h3
+{
+    background: url(bg_explanationh3.gif) no-repeat;
+    margin: 0;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+}
+
+.participation{
+    padding-bottom: 25px;
+    background: url(bg_participation.gif) no-repeat bottom;
+    padding-top: 10px;
+}
+.participation h3{
+    background: url(bg_participationh3.gif) no-repeat;
+    margin: 0;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 50px;
+}
+
+.benefits{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    background: url(bg_benefits.gif) no-repeat bottom;
+}
+
+.benefits h3{
+    background: url(bg_benefitsh3.gif) no-repeat;
+    margin: 0;
+    height: 45px;
+    color: #FFFF99;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.requirements{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: url(bg_requirements.gif) no-repeat bottom;
+}
+
+.requirements h3{
+    background:url(bg_requirementsh3.gif) no-repeat ;
+    margin: 0;
+    height: 35px;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.main-supporting footer{
+    position: relative;
+    top: 35px;
+    left: 90px;
+    background: url(bg_footer.gif) no-repeat;
+    padding-left: 35px;
+    height: 20px;
+}
+
+.sidebar{
+    position: absolute;
+    top:335px;
+    left: 25px;
+    width: 230px;
+}
+
+nav,ul {
+    background: url(bg_lightblue.gif);
+    padding: 0 20px 10px 20px;
+    margin: 0;
+    line-height: 18px;
+}
+.design-selection{
+    padding-bottom: 50px;
+    background: url(bg_lselect.gif) no-repeat bottom;
+    
+}
+.designer-name{
+    color: aliceblue;
+}
+
+
+.design-selection h3{
+    background: url(bg_lselecth3.gif) no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+li{
+    padding-top: 10px;
+    list-style-image: url(bullet.gif);
+}
+.design-selection li{
+    list-style-image: url(zenbullet.gif);
+    
+}
+
+.design-archives{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    background: url(bg_larchives.gif) no-repeat bottom;
+}
+
+.design-archives h3{
+    background: url(bg_larchivesh3.gif) no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.zen-resources{
+    padding-bottom: 50px;
+    background: url(bg_lresources.gif) no-repeat bottom;
+    padding-top: 10px;
+}
+
+.zen-resources h3{
+    background: url(bg_lresourcesh3.gif) no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
