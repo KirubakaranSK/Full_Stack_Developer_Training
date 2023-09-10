@@ -241,3 +241,6 @@ li{
     overflow: hidden;
 }
 
+.design-name{
+    display: block;
+}

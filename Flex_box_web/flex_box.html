@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flex_Box</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="header"><h1>Flex Box</h1></div>
+
+    <ul class="navbar">
+        <li><a class="">Flex-direction</a></li>
+        <li><a class="">Flex-wrap</a></li>
+        <li><a class="">Flex-flow</a></li>
+        <li><a class="">Justify-content</a></li>
+        <li><a class="">Align-items</a></li>
+        <li><a class="">Align-content</a></li>
+    </ul>
+    <br>
+
+
+   <div class="about">
+      <div class="about1">
+          <h1>About Flex</h1>
+          <p>When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with layout in one dimension at a time  either as a row or as a column. This can be contrasted with the two-dimensional model of CSS Grid Layout, which controls columns and rows together.</p>
+      </div>
+      <img src="flex-container.png" width="400px" height="200px">
+   </div>
+   <div class="fd">
+     <div class="fd1">
+      <div>
+              <img src="photo2.avif" width="400px" height="200px">
+              <img src="image2.avif" width="200px" height="200px">
+      </div>
+      <div>   
+             <img src="image2.png" width="200px" height="200px">
+             <img src="photo1.avif" width="400px" height="200px">
+      </div>
+     </div>
+     
+     <div>
+        <h1>Flex-direction :-</h1><br>
+        <pre>display:flex;
+flex-direction:row;
+        </pre>
+        <br>
+        <pre>display:flex;
+flex-direction:column;
+                    </pre>
+      </div>
+      <div class="row1">
+        <div class="col1 text">1</div>
+        <div class="col1 text">2</div>
+        <div class="col1 text">3</div>
+        <div class="col1 text">4</div>
+        <div class="col1 text">5</div>
+      </div>
+      <div class="row2">
+        <div class="col2 text">1</div>
+        <div class="col2 text">2</div>
+        <div class="col2 text">3</div>
+        <div class="col2 text">4</div>
+        <div class="col2 text">5</div>
+      </div>
+    </div>
+    <div class="fw">
+            <div class="row4">
+                <div class="col3 text">1</div>
+                <div class="col3 text">2</div>
+                <div class="col3 text">3</div>
+                <div class="col3 text">4</div>
+                <div class="col3 text">5</div>
+                <div class="col3 text">6</div>
+                <div class="col3 text">7</div>
+                <div class="col3 text">8</div>
+            </div>
+            <div class="row3">
+                <div class="col3 text">1</div>
+                <div class="col3 text">2</div>
+                <div class="col3 text">3</div>
+                <div class="col3 text">4</div>
+                <div class="col3 text">5</div>
+                <div class="col3 text">6</div>
+                <div class="col3 text">7</div>
+                <div class="col3 text">8</div>
+            </div>
+            <div>
+                <h1>Flex-wrap :-</h1>
+                <pre>display:flex;
+flex-wrap:nowarp;
+                </pre><br>
+                <pre>display:flex;
+flex-wrap:warp;
+                </pre>
+            </div>
+            <img src="flex-wrap.png" width="500px" height="300px">
+    </div>
+
+    <div class="ff">
+      <div class="ff1">
+        <div>
+            <div>
+                <h2>Flex-flow:row no-wrap</h2>
+                    <div class="row4">
+                        <div class="col3 text">1</div>
+                        <div class="col3 text">2</div>
+                        <div class="col3 text">3</div>
+                        <div class="col3 text">4</div>
+                        <div class="col3 text">5</div>
+                        <div class="col3 text">6</div>
+                    </div>
+            </div>
+            <div>
+                <h2>Flex-flow:row wrap</h2>
+                <div class="row3">
+                    <div class="col3 text">1</div>
+                    <div class="col3 text">2</div>
+                    <div class="col3 text">3</div>
+                    <div class="col3 text">4</div>
+                    <div class="col3 text">5</div>
+                    <div class="col3 text">6</div>
+                </div>
+            </div>
+            <div>
+                <h2>Flex-flow:row wrap-reverse</h2>
+                <div class="row5">
+                    <div class="col3 text">1</div>
+                    <div class="col3 text">2</div>
+                    <div class="col3 text">3</div>
+                    <div class="col3 text">4</div>
+                    <div class="col3 text">5</div>
+                    <div class="col3 text">6</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Flex-flow:row-reverse no-wrap</h2>
+                    <div class="row6">
+                        <div class="col3 text">1</div>
+                        <div class="col3 text">2</div>
+                        <div class="col3 text">3</div>
+                        <div class="col3 text">4</div>
+                        <div class="col3 text">5</div>
+                        <div class="col3 text">6</div>
+                    </div>
+            </div>
+            <div>
+                <h2>Flex-flow:row-reverse wrap</h2>
+                <div class="row7">
+                    <div class="col3 text">1</div>
+                    <div class="col3 text">2</div>
+                    <div class="col3 text">3</div>
+                    <div class="col3 text">4</div>
+                    <div class="col3 text">5</div>
+                    <div class="col3 text">6</div>
+                </div>
+            </div>
+            <div>
+                <h2>Flex-flow:row-reverse wrap-reverse</h2>
+                <div class="row8">
+                    <div class="col3 text">1</div>
+                    <div class="col3 text">2</div>
+                    <div class="col3 text">3</div>
+                    <div class="col3 text">4</div>
+                    <div class="col3 text">5</div>
+                    <div class="col3 text">6</div>
+                </div>
+            </div>
+        </div>
+        <div>
+        <h1>Flex-flow :-</h1>
+        <h3>flex-flow is shorthand for flex-direction and flex-wrap</h3>
+        <img src="flexflow.png">
+        <pre>
+display:flex;
+flex-flow:row no-warp;
+        or
+flex-flow:row warp;
+        or
+flex-flow:row warp-reverse;
+        or
+flex-flow:row-reverse no-warp;
+        or
+flex-flow:row-reverse warp;
+        or
+flex-flow:row-reverse warp-revers;
+        </pre>
+       </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="jc">
+        <div>
+            <h1>Justify-content :-</h1>
+            <img src="justify-content.png" width="750px">
+            <pre>
+                display:flex;
+                justify-content:center;
+                        or
+                justify-content:start;
+                        or
+                justify-content:end;
+                        or
+                justify-content:space-around;
+                        or
+                justify-content:space-between;
+                        or
+                justify-content:space-evenly;
+                        or
+                justify-content:stretch
+                        </pre>
+
+        </div>
+            <div>
+            <div>
+                <h2>Justify-content:center</h2>
+                <div class="jc1">
+                    <div class="col4 text">1</div>
+                    <div class="col4 text">2</div>
+                    <div class="col4 text">3</div>
+                </div>
+            </div>
+            <div>
+                <h2>Justify-content:start</h2>
+                <div class="jc2">
+                    <div class="col4 text">1</div>
+                    <div class="col4 text">2</div>
+                    <div class="col4 text">3</div>
+                </div>
+            </div>
+            <div>
+                <h2>Justify-content:end</h2>
+                <div class="jc3">
+                    <div class="col4 text">1</div>
+                    <div class="col4 text">2</div>
+                    <div class="col4 text">3</div>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div>
+                <h2>Justify-content:space-around</h2>
+                <div class="jc4">
+                    <div class="col4 text">1</div>
+                    <div class="col4 text">2</div>
+                    <div class="col4 text">3</div>
+                </div>
+            </div>
+            <div>
+                <h2>Justify-content:space-between</h2>
+                <div class="jc5">
+                    <div class="col4 text">1</div>
+                    <div class="col4 text">2</div>
+                    <div class="col4 text">3</div>
+                </div>
+            </div>
+            <div>
+                <h2>Justify-content:space-evenly</h2>
+                <div class="jc6">
+                    <div class="col4 text">1</div>
+                    <div class="col4 text">2</div>
+                    <div class="col4 text">3</div>
+                </div>
+            </div>
+            <div>
+                <h2>Justify-content:stretch</h2>
+                <div class="jc7">
+                    <div class="col5 text">1</div>
+                    <div class="col5 text">2</div>
+                    <div class="col5 text">3</div>
+                </div>
+            </div>
+            </div>
+    </div>
+    
+    <div class="ai">
+        <div><h1>Align-items :-</h1></div>
+        <div class="at">
+        <div class="ai1">
+            <div class="at1">
+             <div>
+              <h2>Align-items:stretch</h2>
+              <div class="a1">
+                <div class="col3 text">1</div>
+                <div class="col3 text">2</div>
+                <div class="col3 text">3</div>
+                <div class="col3 text">4</div>
+              </div>
+              </div>
+             <div>
+                <h2>Align-items:center</h2>
+              <div class="a2">
+                <div class="col5 text">1</div>
+                <div class="col5 text">2</div>
+                <div class="col5 text">3</div>
+                <div class="col5 text">4</div>
+              </div>
+              </div>
+            </div>
+            <div class="at1">
+             <div>
+              <h2>Align-items:end</h2>
+              <div class="a3">
+                <div class="col5 text">1</div>
+                <div class="col5 text">2</div>
+                <div class="col5 text">3</div>
+                <div class="col5 text">4</div>
+              </div>
+            </div>
+            <div>
+                <h2>Align-items:start</h2>
+              <div class="a4">
+                <div class="col5 text">1</div>
+                <div class="col5 text">2</div>
+                <div class="col5 text">3</div>
+                <div class="col5 text">4</div>
+              </div>
+              </div>
+            </div>
+            <div class="at1">
+            <div>
+             <h2>Align-items:baseline</h2>
+             <div class="a5">
+                <div class="col6 text"><h1>1</h1></div>
+                <div class="col6 text"><p>2</p></div>
+                <div class="col6 text"><h3>3</h3></div>
+                <div class="col6 text"><h6>4</h6></div>
+             </div>
+             </div>
+             <pre>            display:flex;
+            align-items:center;
+                    or
+            align-items:start;
+                    or
+            align-items:end;
+                    or
+            align-items:stretch;
+                    or
+            align-items:baseline;
+                        </pre>
+            </div>
+        </div>
+        <img src="align-items.png">
+        </div>
+        </div>
+
+    </div>
+
+    <div class="ac">
+        <div>
+        <h1>Align-content :-</h1>
+        <pre>        display:flex;
+        Align-content:________(same in align-items);
+        </pre>
+        </div>
+        <div>
+            <img src="align-content.png" width="400px" height="400px">
+        </div>
+    </div>
+</body>
+</html>
