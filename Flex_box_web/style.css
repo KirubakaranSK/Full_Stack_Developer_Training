@@ -34,6 +34,7 @@ img:hover{
     font-size: x-large;
     align-items: center;
 
+
 }
 ul{
     position:-webkit-sticky;
@@ -41,6 +42,7 @@ ul{
     top:0;
     background-color: #353935;
     height: 50px;
+    z-index: 2;
 }
 .about{
     display: flex;
@@ -381,5 +383,8 @@ p,pre{
     padding: 30px 0;
     background-color: #708090;
 }
-
+a{
+    text-decoration: none;
+    color:#33D4FF;
+}
 
