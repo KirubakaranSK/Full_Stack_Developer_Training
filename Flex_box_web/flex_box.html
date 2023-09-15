@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="scrollbar"></div>
+    <div id="scrollprogress"></div>
    <div class="header"><h1>Flex Box</h1></div>
 
     <ul class="navbar">
@@ -88,10 +90,10 @@ flex-direction:column;
             <div>
                 <h1>Flex-wrap :-</h1>
                 <pre>display:flex;
-flex-wrap:nowarp;
+flex-wrap:nowrap;
                 </pre><br>
                 <pre>display:flex;
-flex-wrap:warp;
+flex-wrap:wrap;
                 </pre>
             </div>
             <img src="flex-wrap.png" width="500px" height="300px">
@@ -360,5 +362,17 @@ flex-flow:row-reverse warp-revers;
             <img src="align-content.png" width="400px" height="400px">
         </div>
     </div>
+
+
+    <script>
+
+        let progress = document.getElementById('scrollbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll=function(){
+            let proHeight =(window.pageYOffset / totalHeight)*100;
+            progress.style.height = proHeight + "%";
+        }
+    
+    </script>
 </body>
 </html>
