@@ -1,0 +1,85 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgb(17, 54, 241) 0%, rgb(5, 12, 58) 100%) no-repeat;
+    background-attachment: fixed;
+
+}
+
+.calculator{
+    position: relative;
+    top: -5%;
+    left: -15%;
+    background-color: rgb(19, 19, 224);
+    opacity: 0.9;
+    width:fit-content;
+    padding: 15px;
+    border: 5px solid rgb(227, 213, 213,0.7);
+    border-radius: 15px;
+  
+}
+
+.main{
+    position:absolute;
+    top: 35%;
+    left: 40%;
+    background: url("cal_background.png") no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+
+
+.calBody{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #271a1a;
+    border:none;
+    cursor: pointer;
+    font-size: large;
+    
+}
+
+button:hover{
+    transform: scale(1.08);
+    font-size:x-large;
+}
+
+input{
+    width: 250px;
+    height: 50px;
+    border:1px solid whitesmoke;
+    background: transparent;
+    margin-bottom: 10px;
+    font-size: 35px;
+    padding: 10px;
+    color:aliceblue;
+}
+.row{
+    display: flex;
+    gap: 10px;
+}
+
+.symbol{
+    background-color: rgb(118, 222, 241);
+    
+}
+
+#equal{
+    background-color:rgb(45, 28, 226);
+    width: 130px;
+    color:aliceblue;
+    border: 1px solid;
+}
+
