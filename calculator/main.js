@@ -1,55 +1,47 @@
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
+    var display = document.getElementById("display");
+    var buttons = document.querySelectorAll("button");
 
-var display = document.getElementById("display")
-var buttons = document.querySelectorAll("button")
-
-buttons.forEach(button => {
-
-    button.addEventListener("click",function(){
-
-        if(button.id === "clear"){
-            display.value='';
-        }
-        else if(button.id ==="backspace"){
-
-            display.value=display.value.slice(0,-1)
-        }
-        else if(button.id ==="equal"){
-            try {
+    buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+            if (button.id === "clear") {
+                display.value = "";
+            } else if (button.id === "backspace") {
+                display.value = display.value.slice(0, -1);
+            } else if (button.id === "equal") {
                 const result = evaluate(display.value);
-                display.value = result;
-
-            } catch (error) {
-                display.value = "Error";
-        }
-        }
-        else{
-            display.value += button.textContent;
-        }
-    })
-
+                if (typeof result === "string") {
+                    display.value = result;
+                } else {
+                    display.value = result.toString();
+                }
+            } else {
+                display.value += button.textContent;
+            }
+        });
+    });
 
     function evaluate(expression) {
-        const tokens = expression.match(/\d+|\+|-|\*|\//g);
+        const tokens = expression.match(/\d+\.\d+|\d+|[+\-*/]/g);
 
         if (!tokens) {
-            throw new Error("Invalid input");
+            return "Invalid input";
         }
 
         const operators = [];
         const values = [];
 
-        for (let e of tokens) {
-            if (operator(e)) {
+        for (let token of tokens) {
+            if (operator(token)) {
                 while (
                     operators.length > 0 &&
-                    precedence(operators[operators.length - 1]) >= precedence(e)
+                    precedence(operators[operators.length - 1]) >= precedence(token)
                 ) {
                     apply(operators.pop(), values);
                 }
-                operators.push(e);
+                operators.push(token);
             } else {
-                values.push(parseFloat(e));
+                values.push(parseFloat(token));
             }
         }
 
@@ -58,14 +50,14 @@ buttons.forEach(button => {
         }
 
         if (values.length !== 1 || operators.length !== 0) {
-            throw new Error("Invalid input");
+            return "Invalid input";
         }
 
         return values[0];
     }
 
-    function operator(e) {
-        return e === "+" || e === "-" || e === "*" || e === "/";
+    function operator(token) {
+        return token === "+" || token === "-" || token === "*" || token === "/";
     }
 
     function precedence(symbol) {
@@ -96,14 +88,12 @@ buttons.forEach(button => {
                 break;
             case "/":
                 if (b === 0) {
-                    throw new Error("Division by zero");
+                    return "Division by zero";
                 }
                 values.push(a / b);
                 break;
             default:
-                throw new Error("Invalid operator");
+                return "Invalid operator";
         }
     }
-
-})
-})
+});
